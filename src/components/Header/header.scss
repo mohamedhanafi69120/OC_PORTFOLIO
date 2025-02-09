@@ -1,0 +1,49 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+
+    nav{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        margin-right: 15px;
+
+    }
+    a:hover{
+        border-bottom: black 2px solid;
+    }
+
+    .no-underline{
+        text-decoration: none;
+        color: #071013;
+    }
+    
+    img{
+        width: 60px;
+        height: 50px;
+    }
+
+
+}
+
+    
+    
+    @media (max-width: 720px) {
+        header{
+            nav{
+                width: 90%;
+            
+            }
+              
+            .no-underline{
+            margin-left: 25px;
+            }
+        }
+
+    }

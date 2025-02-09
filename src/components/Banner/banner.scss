@@ -1,0 +1,82 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  max-width: 600px; /* Largeur maximale pour écrans larges */
+  width: 80%; /* Largeur fluide et équilibrée */
+  margin: 20px auto; /* Centrer avec espacement */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.banner img {
+  width: 150px; /* Taille adaptée de l'image */
+  height: 150px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.banner p {
+  color: black;
+  margin: 0;
+}
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Centre tout le texte */
+  color: black;
+  width: 90%; /* Largeur fluide pour petits écrans */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 10px; /* Ajoute un espacement entre l'image et les titres */
+}
+
+.presentation h2 {
+  font-size: 24px; /* Taille ajustée pour petits écrans */
+  margin-bottom: 5px;
+}
+
+.presentation h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.presentation p {
+  font-size: 21px; /* Taille normale pour le paragraphe */
+  line-height: 1.6; /* Ajoute un bon espacement entre les lignes */
+  margin: 10px 0; /* Ajoute un espacement vertical */
+}
+
+@media (max-width: 720px) {
+  .banner {
+    height: auto; /* Adapte automatiquement à son contenu */
+    width: 95%; /* Utilise la quasi-totalité de la largeur de l'écran */
+    padding: 15px; /* Réduction des marges internes */
+  }
+
+  .banner img {
+    width: 120px; /* Image plus petite pour écrans étroits */
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  .presentation h2 {
+    font-size: 20px; /* Texte plus petit pour les sous-titres */
+  }
+
+  .presentation h3 {
+    font-size: 18px;
+  }
+
+  .presentation p {
+    font-size: 14px; /* Texte légèrement réduit pour les petits écrans */
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+}
