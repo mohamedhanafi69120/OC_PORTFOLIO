@@ -1,0 +1,127 @@
+.mesProjets {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #071013;
+  border-radius: 52px;
+  margin-left: 5%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+.titleProject {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+}
+.contenairAllProject {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 920px) {
+  .mesProjets {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+}
+
+@media (max-width: 720px) {
+}
+
+.containerTextImage {
+  position: relative;
+}
+
+.containerTextImage img {
+  width: 558px;
+  height: 300px;
+  margin: 15px;
+  border-radius: 12px 12px 0 0;
+}
+.containerTextImage span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  border: 1px solid;
+  border-radius: 12px;
+  padding: 5px;
+  box-shadow: 0 4px 6px rgba(33, 33, 33, 0.924);
+  background-color: #e9eaea;
+  font-weight: bold;
+}
+
+.containerTextImage span:hover {
+  background-color: rgb(40, 146, 40);
+  filter: brightness(100%);
+  transition: all 0.4s ease-in-out;
+}
+.containerTextImage:hover {
+  transform: translateY(-12px);
+  filter: brightness(100%);
+  box-shadow: 5px 15px 15px var(--gray-2);
+  transition: all 0.4s ease-in-out;
+}
+
+.textProject {
+  color: white;
+  margin-left: 4.5%;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.description-project {
+  background-color: rgba(33, 33, 33, 0.924);
+  display: flex;
+  justify-content: space-around;
+  border-radius: 0 0 12px 12px;
+  width: 558px;
+  flex-grow: 1;
+  margin-left: 15px;
+  margin-top: -18px;
+  padding-bottom: 20px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(33, 33, 33, 0.924);
+
+  ul {
+    list-style-type: none;
+  }
+  h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 920px) {
+  .containerTextImage img {
+    width: 500px;
+    height: 300px;
+    margin: 15px;
+    border-radius: 12px 12px 0 0;
+  }
+  .description-project {
+    width: 500px;
+  }
+}
+
+@media (max-width: 720px) {
+  .containerTextImage img {
+    width: 300px;
+    height: 250px;
+    border-radius: 12px 12px 0 0;
+  }
+  .description-project {
+    width: 300px;
+    font-size: 12px;
+  }
+}
