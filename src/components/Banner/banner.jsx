@@ -1,5 +1,5 @@
 import React from "react";
-import MoiImage from "../../styles/img/moi.webp";
+import MoiImage from "../../styles/img/moi.webp"; // Chargement de l'image optimisée au format WebP
 import "./banner.scss";
 
 function Banner() {
@@ -7,7 +7,12 @@ function Banner() {
     <div className="banner">
       <h1>Portfolio de Mohamed</h1> {/* Ajout du titre principal */}
       <div className="image-container">
-        <img src={MoiImage} alt="Moi" className="profile-picture" />
+        <img
+          src={MoiImage}
+          alt="Moi"
+          className="profile-picture"
+          loading="lazy" // Ajout du lazy loading pour optimiser le chargement de l'image
+        />
       </div>
       <div className="presentation">
         <h2>Mohamed Hanafi</h2>

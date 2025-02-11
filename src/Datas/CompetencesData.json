@@ -1,0 +1,42 @@
+[
+  {
+    "name": "HTML5",
+    "image": "HTML.webp"
+  },
+  {
+    "name": "CSS3",
+    "image": "CSS.webp"
+  },
+  {
+    "name": "SASS",
+    "image": "SASS.webp"
+  },
+  {
+    "name": "Javascript",
+    "image": "JS.webp"
+  },
+  {
+    "name": "React",
+    "image": "REACT.webp"
+  },
+  {
+    "name": "Redux",
+    "image": "REDUX.webp"
+  },
+  {
+    "name": "Git",
+    "image": "GIT.webp"
+  },
+  {
+    "name": "Github",
+    "image": "GITHUB.webp"
+  },
+  {
+    "name": "Figma",
+    "image": "FIGMA.webp"
+  },
+  {
+    "name": "Swagger",
+    "image": "SWAGGER.webp"
+  }
+]
