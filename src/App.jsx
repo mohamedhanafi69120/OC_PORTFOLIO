@@ -1,12 +1,18 @@
 import React from "react";
-import Home from "../src/page/Home";
+import Header from "./components/Header/header";
+import Banner from "./components/Banner/banner";
+import GalleryProject from "./components/GalleryProject/galleryProject";
+import Competences from "./components/Competences/competences";
 
-function App() {
+function Home() {
   return (
     <div>
-      <Home />
+      <Header />
+      <Banner />
+      <GalleryProject />
+      <Competences />
     </div>
   );
 }
 
-export default App;
+export default Home;

@@ -2,9 +2,9 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio de Développeur</title>
-
     <!-- SEO Meta Tags -->
     <meta
       name="description"
@@ -45,13 +45,33 @@
       rel="stylesheet"
     />
 
-    <!-- Ajout du fichier CSS principal -->
-    <link rel="stylesheet" href="/src/styles/index.css" />
+    <!-- Schema.org Local Business (Optimisation Localisée) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Hanafi Mohamed",
+        "jobTitle": "Développeur Intégrateur Web",
+        "telephone": "+33783348196",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "22 avenue des Canuts",
+          "addressLocality": "Lyon",
+          "addressRegion": "Auvergne-Rhône-Alpes",
+          "postalCode": "69120",
+          "addressCountry": "FR"
+        },
+        "url": "https://votre-site-portfolio.com",
+        "sameAs": [
+          "https://github.com/mohamedhanafi69120",
+          "https://www.linkedin.com/in/mohamed-hanafi-a11237334/"
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
-
     <!-- Script principal React -->
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.jsx" defer></script>
   </body>
 </html>
