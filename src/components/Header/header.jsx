@@ -7,28 +7,32 @@ function Header() {
     <header>
       <div className="image-container-pc">
         {/* Ajout de loading="lazy" pour optimiser le chargement de l'image */}
-        <img src={PcPic} alt="Image d'un PC" loading="lazy" />
+        <img
+          src={PcPic}
+          alt="Image d'un Petit bonhomme avec PC portable"
+          loading="lazy"
+        />
       </div>
 
       <nav>
         <a
           className="no-underline"
           href="#project"
-          aria-label="Aller à la section Projets"
+          aria-label="Ancre activer pour Aller à la section Projets"
         >
           Projets
         </a>
         <a
           className="no-underline"
           href="#competences"
-          aria-label="Aller à la section Compétences"
+          aria-label="Ancre activer pour Aller à la section Compétences"
         >
           Compétences
         </a>
         <a
           className="no-underline"
           href="#contactMoov"
-          aria-label="Aller à la section Contact"
+          aria-label="Ancre activer pour Aller à la section Contact"
         >
           Contact
         </a>
