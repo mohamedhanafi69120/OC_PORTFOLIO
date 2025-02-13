@@ -55,11 +55,10 @@ function CompetencesGallery() {
             default:
               break;
           }
-
           return (
             <div key={index} className="item">
               {/* Ajout de l'attribut loading="lazy" pour optimiser le chargement des images */}
-              <img src={image} alt={competence.name} loading="lazy" />
+              <img src={image} alt={competence.name} />
             </div>
           );
         })}

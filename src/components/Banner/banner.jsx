@@ -1,17 +1,16 @@
 import React from "react";
-import MoiImage from "../../styles/img/moi.webp"; // Chargement de l'image optimisée au format WebP
+import MoiImage from "../../styles/img/moi.webp";
 import "./banner.scss";
 
 function Banner() {
   return (
     <div className="banner">
-      <h1>Portfolio de Mohamed</h1> {/* Ajout du titre principal */}
+      <h1>Portfolio de Mohamed</h1>
       <div className="image-container">
         <img
           src={MoiImage}
           alt="image de Mohamed Hanafi développeur web"
           className="profile-picture"
-          loading="lazy" // Ajout du lazy loading pour optimiser le chargement de l'image
         />
       </div>
       <div className="presentation">

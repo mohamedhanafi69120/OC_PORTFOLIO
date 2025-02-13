@@ -41,7 +41,6 @@ function GalleryProject() {
               default:
                 break;
             }
-
             return (
               <div key={index} className="containerTextImage">
                 <div className="textProject">{project.title}</div>
@@ -51,11 +50,7 @@ function GalleryProject() {
                   rel="noopener noreferrer"
                 >
                   {/* Ajout de loading="lazy" pour améliorer les performances */}
-                  <img
-                    src={image}
-                    alt={`Projet ${project.title}`}
-                    loading="lazy"
-                  />
+                  <img src={image} alt={`Projet ${project.title}`} />
                   <span>Cliquer pour voir</span>
                 </a>
                 <div className="description-project">
