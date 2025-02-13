@@ -1,7 +1,6 @@
 import React from "react";
 import "./competences.scss";
 import data from "../../Datas/CompetencesData.json";
-
 import HTMLImage from "../../styles/img/HTML.webp";
 import CSSImage from "../../styles/img/CSS.webp";
 import SASSImage from "../../styles/img/SASS.webp";

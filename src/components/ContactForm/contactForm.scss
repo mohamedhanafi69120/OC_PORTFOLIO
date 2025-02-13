@@ -1,0 +1,62 @@
+.contenairContactForm {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-weight: bold;
+  img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.monText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    margin-top: 10px;
+  }
+}
+.fa-phone {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  span {
+    font-weight: bold;
+  }
+}
+.ButtonEnvoyer {
+  button {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(33, 33, 33, 0.924);
+  }
+  button:hover {
+    background-color: green;
+    transform: translateY(-9px);
+    filter: brightness(100%);
+    box-shadow: 0 4px 6px rgba(33, 33, 33, 0.924);
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+@media (max-width: 720px) {
+  .contenairContactForm {
+    height: 520px;
+    width: 90%;
+  }
+}

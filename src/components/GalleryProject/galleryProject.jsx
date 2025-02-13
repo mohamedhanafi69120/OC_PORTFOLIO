@@ -1,7 +1,6 @@
 import React from "react";
 import projects from "../../Datas/ProjectsData.json";
 import "./galleryProject.scss";
-
 import BookiImage from "../../styles/img/Booki.webp";
 import OhMyFoodImage from "../../styles/img/ohmyfood.webp";
 import SophieBluelImage from "../../styles/img/sophie-bluel.webp";

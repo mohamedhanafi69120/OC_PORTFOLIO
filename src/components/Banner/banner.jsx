@@ -9,7 +9,7 @@ function Banner() {
       <div className="image-container">
         <img
           src={MoiImage}
-          alt="Moi"
+          alt="image de Mohamed Hanafi développeur web"
           className="profile-picture"
           loading="lazy" // Ajout du lazy loading pour optimiser le chargement de l'image
         />
