@@ -11,6 +11,8 @@ import react from "@vitejs/plugin-react";
 import viteCompression from "vite-plugin-compression";
 
 export default defineConfig(({ command }) => ({
+  base: "/OC_PORTFOLIO/", // IMPORTANT : Ajoute le bon chemin pour GitHub Pages
+
   plugins: [
     react(),
     command === "build" // Active Gzip seulement en mode production
@@ -22,6 +24,7 @@ export default defineConfig(({ command }) => ({
         })
       : null,
   ],
+
   build: {
     rollupOptions: {
       output: {
@@ -39,12 +42,15 @@ export default defineConfig(({ command }) => ({
       },
     },
   },
+
   server: {
-    middlewareMode: false, // IMPORTANT : Désactiver "html" en mode dev
+    middlewareMode: false, // Garde false pour éviter les erreurs en mode dev
   },
+
   preview: {
     headers: {
       "Cache-Control": "public, max-age=31536000, immutable",
+      "Content-Encoding": "gzip",
     },
   },
 }));
