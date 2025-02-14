@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import viteCompression from "vite-plugin-compression";
 
 export default defineConfig(({ command }) => ({
-  base: command === "serve" ? "/" : "/OC_PORTFOLIO/", // Fix chemin GitHub Pages
+  base: "/OC_PORTFOLIO/", // ✅ FIX : Même base pour build et preview
 
   plugins: [
     react(),
@@ -12,8 +12,8 @@ export default defineConfig(({ command }) => ({
           viteCompression({
             algorithm: "gzip",
             ext: ".gz",
-            threshold: 1024, // Ne compresse que les fichiers > 1 KB
-            deleteOriginFile: false, // Garde les fichiers originaux
+            threshold: 1024,
+            deleteOriginFile: false,
           }),
         ]
       : []),
@@ -38,10 +38,13 @@ export default defineConfig(({ command }) => ({
   },
 
   server: {
-    middlewareMode: false, // Garde false pour éviter les erreurs en mode dev
+    middlewareMode: false, //  Pour éviter des conflits en mode dev
   },
 
   preview: {
+    port: 4173, //  Assure que le preview utilise le bon port
+    open: true, // Ouvre automatiquement le navigateur
+    strictPort: true, //  Empêche le changement de port
     headers: {
       "Cache-Control": "public, max-age=31536000, immutable",
     },

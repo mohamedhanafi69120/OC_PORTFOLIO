@@ -7,7 +7,11 @@ function Header() {
     <header>
       <div className="image-container-pc">
         {/* Ajout de loading="lazy" pour optimiser le chargement de l'image */}
-        <img src={PcPic} alt="Image d'une personne avec PC portable" />
+        <img
+          src={PcPic}
+          alt="Illustration emoji d'un développeur travaillant sur un PC"
+          loading="lazy"
+        />
       </div>
       <nav>
         <a

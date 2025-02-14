@@ -50,7 +50,11 @@ function GalleryProject() {
                   rel="noopener noreferrer"
                 >
                   {/* Ajout de loading="lazy" pour améliorer les performances */}
-                  <img src={image} alt={`Projet ${project.title}`} />
+                  <img
+                    src={image}
+                    alt={`Projet ${project.title}`}
+                    loading="lazy"
+                  />
                   <span>Cliquer pour voir</span>
                 </a>
                 <div className="description-project">

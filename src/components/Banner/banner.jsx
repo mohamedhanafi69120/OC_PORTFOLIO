@@ -11,6 +11,7 @@ function Banner() {
           src={MoiImage}
           alt="image de Mohamed Hanafi développeur web"
           className="profile-picture"
+          loading="lazy"
         />
       </div>
       <div className="presentation">

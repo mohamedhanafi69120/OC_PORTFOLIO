@@ -8,7 +8,11 @@ function ContactForm() {
       <h2>CONTACT</h2>
       <div className="monText">
         {/* Ajout de loading="lazy" pour optimiser le chargement de l'image */}
-        <img src={MoiImage} alt="image de Mohamed Hanafi développeur web" />
+        <img
+          src={MoiImage}
+          alt="image de Mohamed Hanafi développeur web"
+          loading="lazy"
+        />
         <span>Vous avez un projet ? Discutons-en !</span>
 
         {/* Ajout d'un aria-label pour l'accessibilité */}
