@@ -1,28 +1,22 @@
-// import { defineConfig } from "vite";
-// import react from "@vitejs/plugin-react";
-
-// // https://vite.dev/config/
-// export default defineConfig({
-//   plugins: [react()],
-// });
-
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import viteCompression from "vite-plugin-compression";
 
 export default defineConfig(({ command }) => ({
-  base: "/OC_PORTFOLIO/", // IMPORTANT : Ajoute le bon chemin pour GitHub Pages
+  base: command === "serve" ? "/" : "/OC_PORTFOLIO/", // Fix chemin GitHub Pages
 
   plugins: [
     react(),
-    command === "build" // Active Gzip seulement en mode production
-      ? viteCompression({
-          algorithm: "gzip",
-          ext: ".gz",
-          threshold: 1024, // Ne compresse que les fichiers > 1 KB
-          deleteOriginFile: false, // Garde les fichiers originaux
-        })
-      : null,
+    ...(command === "build"
+      ? [
+          viteCompression({
+            algorithm: "gzip",
+            ext: ".gz",
+            threshold: 1024, // Ne compresse que les fichiers > 1 KB
+            deleteOriginFile: false, // Garde les fichiers originaux
+          }),
+        ]
+      : []),
   ],
 
   build: {
@@ -50,7 +44,6 @@ export default defineConfig(({ command }) => ({
   preview: {
     headers: {
       "Cache-Control": "public, max-age=31536000, immutable",
-      "Content-Encoding": "gzip",
     },
   },
 }));
