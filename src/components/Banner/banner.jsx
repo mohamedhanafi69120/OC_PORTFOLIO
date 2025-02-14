@@ -15,8 +15,7 @@ function Banner() {
         />
       </div>
       <div className="presentation">
-        <h2>Mohamed Hanafi</h2>
-        <h3>Intégrateur Web</h3>
+        <h2>Intégrateur Web</h2>
         <p>
           En tant que Développeur-Intégrateur web, je transforme vos designs en
           sites web interactifs. Maîtrisant HTML, CSS, JavaScript et son

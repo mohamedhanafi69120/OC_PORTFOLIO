@@ -15,12 +15,15 @@
 .banner img {
   width: 190px; /* Taille adaptée de l'image */
   height: 190px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+h1 {
+  font-size: 1.8em;
+}
 .banner p {
   color: black;
   margin: 0;
