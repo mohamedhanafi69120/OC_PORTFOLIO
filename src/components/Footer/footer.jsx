@@ -4,7 +4,7 @@ import "font-awesome/css/font-awesome.min.css";
 function Footer() {
   return (
     <footer>
-      <p>&copy; @2025 Mohamed Hanafi. Tous droits réservés.</p>
+      <p>&copy; 2025 Mohamed Hanafi. Tous droits réservés.</p>
 
       <div className="logo">
         {/* Ajout des liens vers GitHub et LinkedIn avec icônes et aria-label */}

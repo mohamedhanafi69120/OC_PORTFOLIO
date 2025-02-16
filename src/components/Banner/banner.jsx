@@ -5,7 +5,7 @@ import "./banner.scss";
 function Banner() {
   return (
     <div className="banner">
-      <h1>Portfolio de Mohamed</h1>
+      <h1>PORTFOLIO DE MOHAMED</h1>
       <div className="image-container">
         <img
           src={MoiImage}
@@ -15,7 +15,7 @@ function Banner() {
         />
       </div>
       <div className="presentation">
-        <h2>Mohamed Hanafi</h2>
+        <h2>MOHAMED HANAFI</h2>
         <h3>Intégrateur Web</h3>
         <p>
           En tant que Développeur-Intégrateur web, je transforme vos designs en
