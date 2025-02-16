@@ -1,22 +1,22 @@
 import React from "react";
 import "./competences.scss";
 import data from "../../Datas/CompetencesData.json";
-import HTMLImage from "../../styles/img/HTML.webp";
-import CSSImage from "../../styles/img/CSS.webp";
-import SASSImage from "../../styles/img/SASS.webp";
-import JSImage from "../../styles/img/JS.webp";
-import ReactImage from "../../styles/img/REACT.webp";
-import ReduxImage from "../../styles/img/REDUX.webp";
-import GitImage from "../../styles/img/GIT.webp";
-import GithubImage from "../../styles/img/GITHUB.webp";
-import FigmaImage from "../../styles/img/FIGMA.webp";
-import SwaggerImage from "../../styles/img/SWAGGER.webp";
+import HTMLImage from "../../sass/img/HTML.webp";
+import CSSImage from "../../sass/img/CSS.webp";
+import SASSImage from "../../sass/img/SASS.webp";
+import JSImage from "../../sass/img/JS.webp";
+import ReactImage from "../../sass/img/REACT.webp";
+import ReduxImage from "../../sass/img/REDUX.webp";
+import GitImage from "../../sass/img/GIT.webp";
+import GithubImage from "../../sass/img/GITHUB.webp";
+import FigmaImage from "../../sass/img/FIGMA.webp";
+import SwaggerImage from "../../sass/img/SWAGGER.webp";
 
 function CompetencesGallery() {
   return (
     <div>
       <h2 id="competences" className="titleProject">
-        COMPÉTENCES & OUTILS
+        COMPÉTENCES
       </h2>
       <section className="gallery">
         {data.map((competence, index) => {

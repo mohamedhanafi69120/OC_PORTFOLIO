@@ -1,12 +1,12 @@
 import React from "react";
 import projects from "../../Datas/ProjectsData.json";
 import "./galleryProject.scss";
-import BookiImage from "../../styles/img/Booki.webp";
-import OhMyFoodImage from "../../styles/img/ohmyfood.webp";
-import SophieBluelImage from "../../styles/img/sophie-bluel.webp";
-import NinaCarducciImage from "../../styles/img/Ninacarducci.webp";
-import KasaImage from "../../styles/img/Kasa.webp";
-import ArgentBankImage from "../../styles/img/argentBank.webp";
+import BookiImage from "../../sass/img/Booki.webp";
+import OhMyFoodImage from "../../sass/img/ohmyfood.webp";
+import SophieBluelImage from "../../sass/img/sophie-bluel.webp";
+import NinaCarducciImage from "../../sass/img/Ninacarducci.webp";
+import KasaImage from "../../sass/img/Kasa.webp";
+import ArgentBankImage from "../../sass/img/argentBank.webp";
 
 function GalleryProject() {
   return (

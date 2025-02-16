@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.scss";
-import PcPic from "../../styles/img/pc.webp";
+import PcPic from "../../sass/img/pc.webp";
 
 function Header() {
   return (

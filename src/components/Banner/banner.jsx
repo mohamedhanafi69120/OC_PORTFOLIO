@@ -1,5 +1,5 @@
 import React from "react";
-import MoiImage from "../../styles/img/moi.webp";
+import MoiImage from "../../sass/img/moi.webp";
 import "./banner.scss";
 
 function Banner() {
