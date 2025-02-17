@@ -1,3 +1,5 @@
+@use "../../sass/variables.scss" as *;
+
 .contenairContactForm {
   width: 40%;
   margin: 0 auto;
@@ -13,14 +15,14 @@
   img {
     width: 300px;
     height: 300px;
-    border-radius: 50%; // Transforme l'image en cercle
-    object-fit: cover; // Empêche la distorsion de l'image
+    border-radius: 50%; // Rend la photo en cercle
+    object-fit: cover; // Évite la déformation
     transition:
       transform 0.3s ease-in-out,
-      box-shadow 0.3s ease-in-out;
+      box-shadow 0.3s ease-in-out; // Animation fluide
 
     &:hover {
-      transform: scale(1.1); // Zoom fluide au survol
+      transform: scale(1.1); // Zoom léger au survol
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); // Ombre subtile pour effet dynamique
     }
   }
@@ -62,7 +64,7 @@
   }
 
   button:hover {
-    background-color: green;
+    background-color: $secondary-color;
     transform: translateY(-9px);
     filter: brightness(100%);
     box-shadow: 0 4px 6px rgba(33, 33, 33, 0.924);
@@ -73,5 +75,9 @@
   .contenairContactForm {
     height: 520px;
     width: 90%;
+  }
+  .contenairContactForm img {
+    width: 220px;
+    height: 220px;
   }
 }
