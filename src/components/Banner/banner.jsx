@@ -15,13 +15,12 @@ function Banner() {
         />
       </div>
       <div className="presentation">
-        <h2>MOHAMED HANAFI</h2>
-        <h3>Intégrateur Web</h3>
+        <h2>Intégrateur Web</h2>
         <p>
-          En tant que Développeur-Intégrateur web, je transforme vos designs en
-          sites web interactifs. Maîtrisant HTML, CSS, JavaScript et son
-          framework React, je crée des expériences numériques exceptionnelles.
-          Travaillons ensemble pour donner vie à votre vision en ligne.
+          Bonjour, je suis Hanafi Mohamed, passionné par le numérique. En
+          formation chez OpenClassrooms pour devenir développeur web, j’apprends
+          à concevoir des sites. Mon objectif est d’intégrer une entreprise pour
+          développer mes compétences et évoluer dans ce domaine.
         </p>
       </div>
     </div>
