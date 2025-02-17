@@ -1,49 +1,118 @@
+@use "../../sass/variables.scss" as *;
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation machine à écrire pour le h2 */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Animation fade-in + slide-up pour le paragraphe */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: white;
-  max-width: 600px; /* Largeur maximale pour écrans larges */
-  width: 80%; /* Largeur fluide et équilibrée */
-  margin: 20px auto; /* Centrer avec espacement */
+  background: black;
+  max-width: 600px;
+  width: 80%;
+  margin: 20px auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Animation fade-in sur l'image (déjà présente) */
 .banner img {
-  width: 190px; /* Taille adaptée de l'image */
+  width: 190px;
   height: 190px;
   margin-bottom: 30px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-out;
+  transition: transform 0.3s ease-in-out;
 }
 
+.banner img:hover {
+  transform: scale(1.1);
+}
+
+/* Animation sur le h1 */
 h1 {
-  font-size: 1.8em;
+  font-size: 1.6em;
+  color: $text-light;
+  text-align: center;
+  animation: slideIn 1s ease-in-out;
 }
-h2 {
+
+/* Animation machine à écrire sur le h2 */
+.typing-effect {
   font-size: 1.8em;
+  color: $text-light;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid $text-light;
+  width: 0;
+  animation:
+    typing 3s steps(30, end) forwards,
+    blink 0.7s infinite;
 }
+
+/* Animation fade-in et slide-up sur le paragraphe */
 .banner p {
-  color: black;
+  color: $text-light;
   margin: 0;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-in-out forwards;
+  animation-delay: 1s; /* Pour laisser le temps aux titres de s'afficher */
 }
+
 .presentation {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; /* Centre tout le texte */
-  color: black;
-  width: 90%; /* Largeur fluide pour petits écrans */
+  text-align: center;
+  color: $text-light;
+  width: 90%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin-top: 10px; /* Ajoute un espacement entre l'image et les titres */
+  margin-top: 10px;
 }
 
 .presentation h2 {
-  font-size: 30px; /* Taille ajustée pour petits écrans */
+  font-size: 30px;
   margin-bottom: 5px;
 }
 
@@ -54,35 +123,66 @@ h2 {
 }
 
 .presentation p {
-  font-size: 21px; /* Taille normale pour le paragraphe */
-  line-height: 1.6; /* Ajoute un bon espacement entre les lignes */
-  margin: 10px 0; /* Ajoute un espacement vertical */
+  font-size: 21px;
+  line-height: 1.6;
+  margin: 10px 0;
 }
 
-@media (max-width: 720px) {
+/* Responsive design */
+@media (max-width: 768px) {
   .banner {
-    height: auto; /* Adapte automatiquement à son contenu */
-    width: 95%; /* Utilise la quasi-totalité de la largeur de l'écran */
-    padding: 15px; /* Réduction des marges internes */
+    width: 95%;
+    padding: 15px;
   }
 
   .banner img {
-    width: 120px; /* Image plus petite pour écrans étroits */
-    height: 120px;
-    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
   }
 
   .presentation h2 {
-    font-size: 20px; /* Texte plus petit pour les sous-titres */
+    font-size: 24px;
   }
 
   .presentation h3 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .presentation p {
-    font-size: 14px; /* Texte légèrement réduit pour les petits écrans */
+    font-size: 16px;
     margin-bottom: 10px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 425px) {
+  .banner {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+
+  .banner img {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  .presentation h2 {
+    font-size: 1em;
+  }
+
+  .presentation h3 {
+    font-size: 1em;
+  }
+
+  .presentation p {
+    font-size: 14px;
     line-height: 1.4;
   }
 }
