@@ -1,6 +1,8 @@
+@use "../../sass/variables.scss" as *;
+
 footer {
   border-top: 2px solid black;
-  background-color: #071013;
+  background-color: $background-dark;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -10,7 +12,7 @@ footer {
 p {
   display: flex;
   justify-content: center;
-  color: white;
+  color: $text-light;
   font-size: 1em;
 }
 

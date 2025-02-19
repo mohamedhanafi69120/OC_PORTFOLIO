@@ -1,3 +1,5 @@
+@use "../../sass/variables.scss" as *;
+
 .gallery {
   display: flex;
   flex-direction: row;
@@ -33,7 +35,7 @@ h2 {
   width: 100px;
   height: 100px;
   margin: 10px;
-  color: black;
+  color: $text-dark;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
   border-radius: 12px;
   img {
