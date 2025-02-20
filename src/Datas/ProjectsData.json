@@ -15,9 +15,9 @@
     "githubLink": "https://github.com/mohamedhanafi69120/OhmyfoodOhmyfood",
     "description": [
       "À partir d'une maquette Figma,",
-      "réalisation d'un site 'Mobile First' en HTML et CSS, avec animations."
+      "réalisation d'un site 'Mobile First' en HTML ,SASS et avec animations."
     ],
-    "skills": ["HTML", "CSS", "Animations"]
+    "skills": ["HTML", "SASS", "Animations"]
   },
   {
     "title": "PORTFOLIO SOPHIE BLUEL",
