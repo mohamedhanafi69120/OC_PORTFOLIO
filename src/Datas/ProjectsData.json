@@ -27,7 +27,7 @@
       "À partir d'une page statique,",
       "de Swagger et d'un backend,",
       "réalisation d'un site dynamique en HTML,",
-      "SASS et JavaScript."
+      "CSS et JavaScript."
     ],
     "skills": ["HTML", "CSS", "FIGMA", "JAVASCRIPT"]
   },
@@ -60,7 +60,7 @@
     "githubLink": "https://github.com/mohamedhanafi69120/P10_ArgentBank",
     "description": [
       "À partir d'un design",
-      "réalisé en HTML et CSS,",
+      "réalisé en HTML et SASS,",
       "d'un backend express/mongoDB,",
       "réalisation d'une application bancaire en React et en utilisant Redux-Toolkit."
     ],

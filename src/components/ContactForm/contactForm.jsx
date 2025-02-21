@@ -1,6 +1,5 @@
 import MoiImage from "../../sass/img/moi.webp";
 import "./contactForm.scss";
-import "font-awesome/css/font-awesome.min.css";
 
 function ContactForm() {
   return (
