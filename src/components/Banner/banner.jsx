@@ -17,14 +17,15 @@ function Banner() {
       <div className="presentation">
         <h2>Intégrateur Web</h2>
         <p>
-          Bonjour, je suis Hanafi Mohamed, passionné par le numérique.
-          Actuellement en formation Développeur Intégrateur Web chez
-          OpenClassrooms, je me spécialise dans la conception et l’intégration
-          de sites web modernes et interactifs. Grâce à cette formation, j’ai
-          acquis des compétences en HTML, CSS, JavaScript, React, Git ainsi
-          qu’en optimisation de l’accessibilité et du SEO. Mon objectif est
-          d’intégrer une entreprise afin de renforcer mon expertise et
-          contribuer à des projets innovants.
+          Bonjour, je suis Hanafi Mohamed, diplômé Développeur Intégrateur Web
+          chez OpenClassrooms. Je me spécialise dans la conception et
+          l’intégration de sites web modernes et interactifs. J’ai acquis des
+          compétences solides en HTML, CSS, JavaScript, React, Git, ainsi qu’en
+          optimisation de l’accessibilité et du SEO. Actuellement, je suis à la
+          recherche d’une alternance afin de mettre en pratique mes compétences,
+          renforcer mon expertise et contribuer à des projets innovants. J’ai
+          déjà commencé à postuler et à développer mon réseau, notamment sur
+          LinkedIn.
         </p>
       </div>
     </div>
